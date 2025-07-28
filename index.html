@@ -30,6 +30,16 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+	 <!-- Client ID fetcher (at bottom of body) -->
+  <script>
+    setTimeout(function() {
+      gtag('get', 'G-28F392YVM9', 'client_id', function(clientID) {
+        console.log("GA4 Client ID:", clientID);
+      });
+    }, 1000);
+  </script>
+
+	  
 			<!-- Google Tag Manager (noscript) -->
 			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57VFKM38"
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
